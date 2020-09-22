@@ -28,7 +28,7 @@ class Translate{
 
     async setLanguage(){
         while ( 1 == 1 ){
-             this.selectedLanguage = this.readline.question(this.msg.inputLanguage)
+             this.selectedLanguage = this.readline.question(this.msg.inputLanguage).toLowerCase()
             if (this.languages.includes(this.selectedLanguage)){
                 break
             }
